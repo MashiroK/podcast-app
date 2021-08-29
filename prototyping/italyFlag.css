@@ -1,0 +1,19 @@
+.flag {
+  width: 600px;
+  height: 350px;
+  border: 1px solid;
+    display: flex;
+}
+.column {
+  width: 33.33%;
+  height: 100%;
+}
+.green{
+  background-color: #2A8C5E;
+}
+.white{
+  background-color: #FFFFFF;
+}
+.red{
+  background-color: #A60F0F;
+}
