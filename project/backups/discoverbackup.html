@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/discover.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<div id="navP"></div>
+	
+	<div class="bgImgLogged" id="mycontainer">
+		<div class="hidden" id="containerFull">
+				<div class="containerFull">
+
+				</div>
+		</div>
+		<div class="" id="container">
+				<div class="container">
+
+				</div>
+		</div>
+		</div>
+		
+	</div>
+	
+
+<script>
+	$(function(){
+  		$("#navP").load("sidemenu.html", function() {
+			document.getElementById('expand').onclick = function(e) {
+					
+					if(document.getElementById('containerFull').className==="hidden") {
+						var bgToggle = document.getElementById('containerFull');
+						document.getElementById('containerFull').className = '';
+						document.getElementById('container').className = 'hidden';
+					
+					}
+
+					else if(document.getElementById('container').className==="hidden") {
+						var bgToggle = document.getElementById('container');
+						document.getElementById('container').className = '';
+						document.getElementById('containerFull').className = 'hidden';
+					
+					}
+
+					
+
+
+		};
+		  });
+	});
+
+</script>
+<script src="./js/discover.js"></script>
+
+
+</body>
+</html>

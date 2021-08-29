@@ -1,0 +1,106 @@
+:root {
+    --light-green: #ABD8D9;
+    --lightest-green: #c0e1e2;
+    --dark-green: #547D83;
+    --medium-green: #6EBCAE;
+    --light-purple: #967CBC;
+    --medium-purple: #8A70AE;
+    --dark-purple: #6F5B8C;
+    --dark-gray: #3D3D3D;
+    --darker-gray: #272727;
+    --light-gray: #C5BCCF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa.ttf);
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto/Roboto-Light.ttf); 
+}
+
+
+.containerFull {
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 150px;
+    bottom: 10px;
+    right: 10px;
+    left: 90px;
+    border-radius: 8px;
+
+    background: rgba(21, 21, 21, 0.3);
+}
+
+
+.container {
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 150px;
+    bottom: 10px;
+    right: 10px;
+    left: 290px;
+    border-radius: 8px;
+
+    background: rgba(21, 21, 21, 0.3);
+}
+
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+.box a {
+    background-image: url(../assets/imgs/episodePlaceholder.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+.box a[type="ep"] {
+    background-image: url(../assets/imgs/podcastPlaceholder.png);
+}
+
+.grid div, .gridExpanded div {
+    margin-top: 100px;
+    margin-left: 100px;
+    border: 1px solid transparent;
+}
+
+.container .gridExpanded, .containerFull .gridExpanded { /*margin to resize grid*/ 
+    margin-right: 140px;
+    margin-bottom: 140px;
+}
+
+.gridExpanded {
+    display: grid;
+    gap: 0px 100px;
+    grid-template-columns: repeat(auto-fit, 180px);
+    
+}
+
+
+h2 {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 30px;
+    color: var(--darker-gray);
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 40px;
+
+}

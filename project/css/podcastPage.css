@@ -1,0 +1,214 @@
+:root {
+    --light-green: #ABD8D9;
+    --lightest-green: #c0e1e2;
+    --dark-green: #547D83;
+    --medium-green: #6EBCAE;
+    --light-purple: #967CBC;
+    --medium-purple: #8A70AE;
+    --dark-purple: #6F5B8C;
+    --dark-gray: #3D3D3D;
+    --darker-gray: #272727;
+    --light-gray: #C5BCCF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa.ttf);
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto/Roboto-Light.ttf); 
+}
+
+@font-face {
+    font-family: RobotoThinItalic;
+    src: url(../assets/fonts/Roboto/Roboto-LightItalic.ttf); 
+}
+
+.containerFull {
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 450px;
+    bottom: 10px;
+    right: 10px;
+    left: 90px;
+    border-radius: 8px;
+
+    background: rgba(21, 21, 21, 0.3);
+}
+
+.container {
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 150px;
+    bottom: 10px;
+    right: 10px;
+    left: 290px;
+    border-radius: 8px;
+
+    background: rgba(21, 21, 21, 0.3);;
+}
+
+.container div[type="sub"]{
+    position: absolute;
+    top: 35%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-radius: 0px 0px 8px 8px;
+
+    background: rgba(21, 21, 21, 0.3);;
+}
+
+h2 {
+    font-family: Comfortaa;
+    font-weight: normal;
+    font-size: 72px;
+    color: #222222;
+    position: absolute;
+    right: 250px;
+    top: 20px;
+
+}
+
+h3 {
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 22px;
+    color: #222222;
+    position: absolute;
+    right: 250px;
+    top: 100px;
+
+}
+
+h3[type="author"] {
+    font-size: 18px;
+    right: 300px;
+    top: 170px;
+}
+
+.white {
+    font-family: RobotoThinItalic;
+    font-size: 18px;
+    color: #e4e4e4;
+}
+
+.info {
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 65%;
+    top: 0%;
+    overflow: hidden;
+
+}
+
+.info__container{
+    margin: 10px;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 5%;
+    top: 5%;
+
+}
+
+.info__container-img {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+
+    background-image: url(../assets/imgs/episodePlaceholder.png);
+    background-size: contain;
+    border-radius: 8px;
+    
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.author__picture {
+    position: absolute;
+    right: 240px;
+    top: 150px;
+    background-size: contain;
+      
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.follow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    width: 160px;
+    text-align: center;
+    line-height: 60px;
+    background-color: var(--light-green);
+    border-radius: 4px;
+    color: var(--dark-purple);
+    font-size: 24px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.button {
+    height:50px;
+    width: 140px;
+    text-align: center;
+    line-height: 50px;
+    background-color: var(--light-green);
+    border-radius: 4px;
+    color: var(--dark-purple);
+    font-size: 20px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.button:last-child {
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.button {
+    grid-row: -1 / -1;
+}
+
+.button[type="or"] {
+    width: 40px;
+    background-color: transparent;
+    color: white;
+    font-family: RobotoThinItalic;
+}
+
+.button__container {
+    display: grid;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    grid-template-columns: 150px 50px 150px;
+    grid-template-rows: 1fr 0px;
+
+}
+
+svg[type="shuffle"]{
+    fill: var(--dark-purple);
+    position: absolute;
+    top: 12px;
+    left: 300px;
+}
+
+svg[type="review"]{
+    fill: black;
+    margin-left: 50px;
+    transform: scale(2);
+}

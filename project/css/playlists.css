@@ -1,0 +1,123 @@
+:root {
+    --light-green: #ABD8D9;
+    --lightest-green: #c0e1e2;
+    --dark-green: #547D83;
+    --medium-green: #6EBCAE;
+    --light-purple: #967CBC;
+    --medium-purple: #8A70AE;
+    --dark-purple: #6F5B8C;
+    --dark-gray: #3D3D3D;
+    --darker-gray: #272727;
+    --light-gray: #C5BCCF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa.ttf);
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto/Roboto-Light.ttf); 
+}
+
+
+.containerFull {
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 150px;
+    bottom: 10px;
+    right: 10px;
+    left: 90px;
+    border-radius: 8px;
+
+    background: rgba(21, 21, 21, 0.3);
+}
+
+
+.container {
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 150px;
+    bottom: 10px;
+    right: 10px;
+    left: 290px;
+    border-radius: 8px;
+
+    background: rgba(21, 21, 21, 0.3);
+}
+
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+.box a {
+    background-image: url(../assets/imgs/episodePlaceholder.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+.box:first-child a {
+    background: rgba(21, 21, 21, 0.3);
+    background-image: url(../assets/icons/addplaylist2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+.grid div, .gridExpanded div {
+    margin-top: 60px;
+    margin-left: 100px;
+    border: 1px solid transparent;
+}
+
+
+.gridExpanded {
+    display: grid;
+    gap: 0px 100px;
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-template-rows: 300px;
+    overflow: hidden;
+    
+    padding-right: 120px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 100px;
+}
+
+
+h2 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--darker-gray);
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+h1[type="title"] {
+    font-family: Roboto;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-left: 20px;
+}
