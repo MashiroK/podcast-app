@@ -55,3 +55,10 @@ body {
     background-image: url(../assets/imgs/bgDiscover.png);
     background-size: cover;
 }
+
+.bgImgStudio {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(../assets/imgs/bgStudio.png);
+    background-size: cover;
+}

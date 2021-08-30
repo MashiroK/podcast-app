@@ -79,6 +79,7 @@
 .create__container .option {
     display: grid;
     height: 30px;
+    width: 100%;
     position: relative;
     align-content: center;
     justify-content: center;
@@ -93,7 +94,7 @@
 
 .create__container {
     margin-top: 20px;
-    height: 350px;
+    height: 320px;
     position: relative; /*Makes sure the absolute from child is contained within crate__container*/
     
 }
@@ -126,15 +127,19 @@
 .create__container-img {
     height: 200px;
     width: 200px;
-    top: 60px;
+    top: 20px;
     left: 8%;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    fill: var(--dark-green);
 }
 
 .create__container-name {
     height: 40px;
     left: 5%;
     right: 5%;
-    top: 75px;
+    top: 35px;
     
 }
 
@@ -142,7 +147,7 @@
     height: 100px;
     left: 5%;
     right: 5%;
-    top: 140px;
+    top: 100px;
 }
 
 .create__container-subcontainerBtn {
@@ -150,7 +155,7 @@
     height: 60px;
     left: 5%;
     right: 5%;
-    top: 260px;
+    top: 230px;
     display: grid;
     grid-template-columns: auto auto;
     overflow: hidden;
@@ -186,8 +191,8 @@
     border-style: none;
 }
 
-.create__container .long {
-    padding: 0px 20px 45px;
+textarea {
+    resize: none;
 }
 
 .create__container ::placeholder {

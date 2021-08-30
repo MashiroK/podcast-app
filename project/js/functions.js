@@ -71,6 +71,9 @@ $(function(){ //CreatePlaylist
     $("#playlistP").load("createPlaylist.html");
 });
 
+$(function(){ //Scroll Studio
+    $("#gridScrollS").load("gridScrollStudio.html")
+});
 
 
 //
