@@ -66,3 +66,43 @@ $(function(){
     
     });
 });
+
+$(function(){ //CreatePlaylist
+    $("#playlistP").load("createPlaylist.html");
+});
+
+
+
+//
+// window functions
+//
+
+var internalmodal; //dfined
+
+window.onclick = function(event) {
+    if (event.target == internalmodal) {
+      internalmodal.style.display = "none";
+    }
+    if (event.target == modal) {
+      modal.style.display = "none";
+      $("#suboverlay").empty();
+      modal = document.getElementById("modal");
+    }
+    else if (event.target == leaveID) {
+      modal.style.display = "none";
+      $("#suboverlay").load("exitProfile.html");
+    }
+    else if (event.target == helpID) {
+      modal.style.display = "none";
+      $("#suboverlay").load("helpProfile.html");
+    }
+    else if (event.target == settingsID) {
+      modal.style.display = "none";
+      $("#suboverlay").load("settingsProfile.html");
+    }
+    else if (event.target == settingsDeleteID) {
+      modal.style.display = "none";
+      $("#suboverlay").load("deleteProfile.html");
+    }
+  
+  }

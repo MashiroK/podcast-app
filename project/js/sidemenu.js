@@ -18,3 +18,9 @@ for(var i=0; i < x.length; i++) {
   }
 }
 
+//Here code throws error of reading classList null
+//on first load. For some reason, jquery cant get
+//class on liveserver on first load and doesnt select
+//anything, but after changing page works fine.
+//Maybe because there's no default selection for
+//active tab?
