@@ -34,10 +34,54 @@ $(function(){
                     document.getElementById('search__box-expanded').className = 'hidden';
                 
                 }
+
+                
             };
         });
+
+        $(function(){
+            $("#songP").load("songBar.html", function() { //Nested songBar Attributes
+                window.addEventListener('click', function(event) { //Fix from click to load somehow
+
+                    var nav = document.getElementById("nav");
+                    if (nav.classList.contains("nav-closed")) {
+                        $( "#gridChange" ).css("grid-template-columns", " 80px minmax(200px, 340px) minmax(150px, 1fr) minmax(80px, 120px)");
+                    }
+                    else {
+                        $( "#gridChange" ).css("grid-template-columns", " 300px minmax(200px, 340px) minmax(150px, 1fr) minmax(80px, 120px)");
+                    }
+                    
+                    $(function(){ //Loads songBar into any page with gridScroll
+                        $("#gridScrollDoppel2").load("gridScroll.html", function() {
+                            $("#gridScrollDoppel").load("gridScroll.html", function() {
+                                var showBar = document.querySelectorAll("div.box > a");
+                                showBar.forEach(boxy => {
+                                    if ((event.target.type != "") && (boxy.type == event.target.type)) {
+                                        songBar.style.display = "block";
+                                    }
+                                });
+                            });
+                        });
+                    });
+
+                    $(function(){ //Loads songBar into any page with listScroll
+                        $("#listScrollDoppel").load("listScroll.html", function() {
+                            var showBar = document.querySelectorAll("div.boxf > a");
+                            showBar.forEach(boxy => {
+                                if ((event.target.type != "") && (boxy.type == event.target.type)) {
+                                    songBar.style.display = "block";
+                                }
+                            });
+                        });
+                    });
+                
+                });
+            });
+        });
     });
+
 });
+
 
 $(function(){ //User Callback (Just load-async)
     $("#userP").load("userProfile.html", function() {
@@ -47,18 +91,18 @@ $(function(){ //User Callback (Just load-async)
 
 $(function(){ //Change to sync gridScroll
     $("#gridScrollP2").load("gridScroll.html", function() {
-    
+        
     });
 });
 $(function(){ 
     $("#gridScrollP").load("gridScroll.html", function() {
-    
+       
     });
 });
 
 $(function(){ //Change to sync listScroll
     $("#listScrollP2").load("listScroll.html", function() {
-    
+
     });
 });
 $(function(){ 
@@ -76,6 +120,7 @@ $(function(){ //Scroll Studio
 });
 
 
+
 //
 // window functions
 //
@@ -83,6 +128,7 @@ $(function(){ //Scroll Studio
 var internalmodal; //dfined
 
 window.onclick = function(event) {
+    try {
     if (event.target == internalmodal) {
       internalmodal.style.display = "none";
     }
@@ -107,5 +153,8 @@ window.onclick = function(event) {
       modal.style.display = "none";
       $("#suboverlay").load("deleteProfile.html");
     }
-  
+    } catch (e) {
+        console.log();
   }
+  
+}
