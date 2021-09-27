@@ -1,14 +1,14 @@
-var internalmodalU = document.getElementById("modalUpload");
+var internalmodal = document.getElementById("modalUpload");
 var uploadPodcast = document.getElementById("upload");
 var backArrowUpload = document.getElementsByClassName("closeUpload")[0];
 
 uploadPodcast.onclick = function() {
-  internalmodalU.style.display = "block";
+  internalmodal.style.display = "block";
   
 }
 
 backArrowUpload.onclick = function() {
-  internalmodalU.style.display = "none";
+  internalmodal.style.display = "none";
 }
 
 //Re-code JS more organized in next iteration

@@ -132,18 +132,10 @@ $(function(){ //uploadPodcastEpisode
 // window functions
 //
 
-var internalmodal; //dfined
-
 window.onclick = function(event) {
     try {
     if (event.target == internalmodal) {
-      internalmodal.style.display = "none";
-    }
-    if (event.target == internalmodalU) {
-        internalmodalU.style.display = "none";
-    }
-    if (event.target == modalPodcast) {
-        modalPodcast.style.display = "none";
+        internalmodal.style.display = "none";
     }
     if (event.target == modal) {
       modal.style.display = "none";

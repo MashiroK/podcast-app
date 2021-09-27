@@ -1,15 +1,15 @@
-var internalmodalP = document.getElementById("modalPodcast");
+var internalmodal = document.getElementById("modalPodcast");
 var createPodcast = document.getElementById("createStudio");
 var backArrowPodcast = document.getElementsByClassName("closePodcast")[0];
 
 
 createPodcast.onclick = function() {
-  internalmodalP.style.display = "block";
+  internalmodal.style.display = "block";
   
 }
 
 backArrowPodcast.onclick = function() {
-  internalmodalP.style.display = "none";
+  internalmodal.style.display = "none";
 }
 
 //Re-code JS more organized in next iteration
