@@ -1,0 +1,105 @@
+* {
+      margin: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto/Roboto-Light.ttf); 
+}
+
+.scroller {
+    display: grid;
+    gap: 20px;
+    /*grid-auto-flow: column;*/
+    grid-template-rows: 10px;
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+
+    transition: all 0.2s;
+    transform: scale(0.98);  
+    user-select: none;
+    cursor: pointer;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+
+.scroller.active {
+    background: rgba(255,255,255,0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
+
+.scroller::before, .scroller::after { /*Fills first and last positions with 10px for aligment*/
+  content: '';
+  width: 10px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+h1 {
+    font-family: Roboto;
+    font-weight: lighter;
+}
+
+.boxf {
+    background: rgba(21,21,21,0.3);
+    display: flex;
+    height: 100px;
+    padding: 20px;
+    align-items: center;
+}
+
+.boxf a[type="ep"] {
+    background-image: url(../assets/imgs/podcastPlaceholder.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+}
+
+.boxf a[type="title"] {
+    background: rgba(21,21,21,0.3);
+    display: flex;
+    min-width: 50px;
+    flex-grow: 1;
+    justify-content: center;
+    height: 30px;
+    border-radius: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.boxf div[type="time"] , .boxf div[type="views"] {
+    background: rgba(21,21,21,0.3);
+    display: flex;
+    min-width: 80px;
+    flex-grow: 0.2;
+    justify-content: center;
+    height: 30px;
+    border-radius: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img {
+    border-radius: 8px;
+}

@@ -1,0 +1,17 @@
+Sobre a entrega:
+
+Infelizmente tive muito pouco tempo após o meio do semestre para aprimorar esse projeto, e 
+meu escopo inicial foi bem grande para ser desenvolvido por uma pessoa. Devido ao inicio do estágio,
+ficou ainda mais dificil, e tive que correr para entregar sequer algo apresentável.
+O app, no ponto em que está, ficou muito abaixo do que pretendia no início do semestre, e muito inferior
+às minhas outras entregas, onde tive mais tempo para dedicar. Para mitigar a falta de tempo, coloquei em prática
+os conceitos de Prog Web relevantes à essa terceira entrega, como o PHP, lógica de banco de dados, etc. 
+Sinto que solidifiquei muito o conhecimento ao longo do desenvolvimento, e pretendo, mesmo após o semestre,
+continuar com o desenvolvimento desse projeto até um ponto que me agrade, já que ele me ajudou muito para
+conseguir meu estágio também, alem de que me diverti muito com o desenvolvimento.
+
+Nessa entrega, não tive oportunidade de fazer o banco completo, a relação dos dados, e execução completa da
+lógica dos scripts, foi tudo bem corrido, e novamente, apliquei partes para demonstrar o entendimento do
+conteúdo referente à essa parte do semestre/projeto. Por fim, como idéia final, pretendo fazer toda a parte de
+lógica que fiquei de corrigir no JS (Por exemplo, não tive como implementar a barra de play), e conectar
+todas as páginas do projeto com o banco de dados.

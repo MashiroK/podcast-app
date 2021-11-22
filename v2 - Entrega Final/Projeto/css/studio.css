@@ -1,0 +1,90 @@
+:root {
+    --light-green: #ABD8D9;
+    --lightest-green: #c0e1e2;
+    --dark-green: #547D83;
+    --medium-green: #6EBCAE;
+    --light-purple: #967CBC;
+    --medium-purple: #8A70AE;
+    --dark-purple: #6F5B8C;
+    --dark-gray: #3D3D3D;
+    --darker-gray: #272727;
+    --light-gray: #C5BCCF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa.ttf);
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto/Roboto-Light.ttf); 
+}
+
+
+.containerFull {
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 150px;
+    bottom: 10px;
+    right: 50px;
+    left: 50px;
+    border-radius: 8px;
+
+    background: rgba(21, 21, 21, 0.2);
+}
+
+.logoStudio {
+    background-image: url(../assets/imgs/logoLong.png);
+    background-repeat: no-repeat;
+    background-size: 280px;
+    background-position: center;
+    height: 150px;
+
+}
+
+.studioOption {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 40px 60px;
+    color: var(--dark-green);
+    font-size: 14px;
+}
+
+.studioOption img {
+    height: 80px;
+}
+
+.studioButtons {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: inline-block;
+
+}
+
+.studioButtons a {
+    fill: var(--dark-green);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.studioProfile {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    display: flex;
+    align-items: center;
+
+}
+.studioProfile p {
+    padding-right: 20px;
+    font-size: 22px;
+    color: var(--dark-green);
+}

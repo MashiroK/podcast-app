@@ -1,0 +1,200 @@
+:root {
+    --light-green: #ABD8D9;
+    --lightest-green: #c0e1e2;
+    --dark-green: #547D83;
+    --medium-green: #6EBCAE;
+    --light-purple: #967CBC;
+    --medium-purple: #8A70AE;
+    --dark-purple: #6F5B8C;
+    --dark-gray: #3D3D3D;
+    --darker-gray: #272727;
+    --light-gray: #C5BCCF;
+    --stroke: #3E5A5F;
+    --background: #9BC7C8;
+    --button: #68969D;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa.ttf);
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../assets/fonts/Roboto/Roboto-Bold.ttf); 
+}
+
+@font-face {
+    font-family: RobotoThin;
+    src: url(../assets/fonts/Roboto/Roboto-Thin.ttf); 
+}
+
+.modal-internal {
+    display: none; /*change to none*/
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__container-internal {
+    position: relative;
+    background-color: var(--light-green);
+    margin: 12% auto;
+    padding: 10px;
+    border-radius: 6px;
+    width: 40%; /*should be minmax*/
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.close-internal {
+    position: absolute;
+    color: var(--light-purple);
+    float: left;
+    font-weight: bold;
+    z-index: 2;
+}
+
+  .close-internal:hover, .close-internal:focus {
+  color: var(--dark-purple);
+  cursor: pointer;
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.create__container .option {
+    display: grid;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.create__container .option p {
+    font-size: 20px;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+.create__container {
+    margin-top: 20px;
+    height: 320px;
+    position: relative; /*Makes sure the absolute from child is contained within crate__container*/
+    
+}
+
+.create__container-subcontainerImg {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.create__container-subcontainerData {
+    height: 100%;
+    width: 60%; 
+    position: absolute;
+    right: 0px;
+    overflow: hidden;
+    /*Using inline-block: Needs to be -1% because of default inline spacing, could remove margin to fix*/
+
+}
+
+
+.create__container-img, .create__container-name, .create__container-desc {
+    border: 1px solid var(--stroke);
+    background-color: var(--background);
+    position: absolute;
+}
+
+.create__container-img {
+    height: 200px;
+    width: 200px;
+    top: 20px;
+    left: 8%;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    fill: var(--dark-green);
+}
+
+.create__container-name {
+    height: 40px;
+    left: 5%;
+    right: 5%;
+    top: 35px;
+    
+}
+
+.create__container-desc {
+    height: 100px;
+    left: 5%;
+    right: 5%;
+    top: 100px;
+}
+
+.create__container-subcontainerBtn {
+    position: absolute;
+    height: 60px;
+    left: 5%;
+    right: 5%;
+    top: 230px;
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow: hidden;
+}
+
+.create__container-btn {
+    background-color: var(--button);
+    position: relative;
+    width: 160px;
+    height: 50px;
+    grid-column: 2; /*alignment to parent w overflow*/
+    border-radius: 4px;
+
+}
+
+.create__container-btn p {
+    font-family: RobotoBold;
+    color: var(--light-green);
+    text-align: center;
+    line-height: 50px;
+    
+}
+
+.create__container a {
+    text-decoration: none;
+}
+
+.create__container input, .create__container textarea {
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    background-color: transparent;
+    border-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.create__container ::placeholder {
+      font-style: italic;
+  }

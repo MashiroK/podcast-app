@@ -1,0 +1,59 @@
+:root {
+    --light-green: #ABD8D9;
+    --lightest-green: #c0e1e2;
+    --dark-green: #547D83;
+    --medium-green: #6EBCAE;
+    --light-purple: #967CBC;
+    --medium-purple: #8A70AE;
+    --dark-purple: #6F5B8C;
+    --dark-gray: #3D3D3D;
+    --light-gray: #C5BCCF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa.ttf);
+    font-weight: normal;
+    
+}
+
+
+.containerFull {
+    display: flex;
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 150px;
+    bottom: 10px;
+    right: 10px;
+    left: 90px;
+    border-radius: 8px;
+
+    background: rgba(21, 21, 21, 0.3);
+}
+
+
+.container {
+    display: flex;
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 150px;
+    bottom: 10px;
+    right: 10px;
+    left: 290px;
+    border-radius: 8px;
+
+    background: rgba(21, 21, 21, 0.3);
+}
+
+.container__expand {
+    background: rgba(21, 21, 21, 0);
+}
+
+.hidden {
+    display: none;
+}
+
